@@ -1,0 +1,10 @@
+D:\BT\Ne\New folder (2)\trungbinh\bin\Debug\netstandard2.0\trungbinh.deps.json
+D:\BT\Ne\New folder (2)\trungbinh\bin\Debug\netstandard2.0\trungbinh.dll
+D:\BT\Ne\New folder (2)\trungbinh\bin\Debug\netstandard2.0\trungbinh.pdb
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.csproj.AssemblyReference.cache
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.GeneratedMSBuildEditorConfig.editorconfig
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.AssemblyInfoInputs.cache
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.AssemblyInfo.cs
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.csproj.CoreCompileInputs.cache
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.dll
+D:\BT\Ne\New folder (2)\trungbinh\obj\Debug\netstandard2.0\trungbinh.pdb

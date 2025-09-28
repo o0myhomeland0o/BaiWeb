@@ -1,0 +1,6 @@
+D:\BT\Ne\New folder (2)\ConsoleApp\bin\Debug\ConsoleApp.exe
+D:\BT\Ne\New folder (2)\ConsoleApp\bin\Debug\ConsoleApp.pdb
+D:\BT\Ne\New folder (2)\ConsoleApp\obj\Debug\ConsoleApp.csproj.AssemblyReference.cache
+D:\BT\Ne\New folder (2)\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+D:\BT\Ne\New folder (2)\ConsoleApp\obj\Debug\ConsoleApp.exe
+D:\BT\Ne\New folder (2)\ConsoleApp\obj\Debug\ConsoleApp.pdb
