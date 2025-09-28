@@ -1,0 +1,2 @@
+D:\BT\Ne\New folder (2)\WebApplication2\obj\Debug\WebApplication2.csproj.AssemblyReference.cache
+D:\BT\Ne\New folder (2)\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache

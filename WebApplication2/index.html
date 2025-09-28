@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Trung Bình 5 Số</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 320px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .inputs input {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #0078d7;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: #005a9e;
+            }
+
+        #result {
+            margin-top: 14px;
+            font-weight: bold;
+            color: #0078d7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Máy tính trung bình cộng</h2>
+        <div class="inputs">
+            <input type="number" id="n1" placeholder="Số 1">
+            <input type="number" id="n2" placeholder="Số 2">
+            <input type="number" id="n3" placeholder="Số 3">
+            <input type="number" id="n4" placeholder="Số 4">
+            <input type="number" id="n5" placeholder="Số 5">
+        </div>
+        <button onclick="tinhTrungBinh()">Tính</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function tinhTrungBinh() {
+            const nums = [
+                document.getElementById("n1").value,
+                document.getElementById("n2").value,
+                document.getElementById("n3").value,
+                document.getElementById("n4").value,
+                document.getElementById("n5").value
+            ];
+
+            // gửi request tới API
+            const query = nums.map((n, i) => `n${i + 1}=${encodeURIComponent(n)}`).join("&");
+            fetch("api.aspx?" + query)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("result").textContent = "Lỗi: " + data.error;
+                    } else {
+                        document.getElementById("result").textContent = "Trung bình cộng = " + data.result;
+                    }
+                })
+                .catch(err => {
+                    document.getElementById("result").textContent = "Lỗi: " + err;
+                });
+        }
+    </script>
+</body>
+</html>
