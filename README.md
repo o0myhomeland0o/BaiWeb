@@ -9,7 +9,11 @@ Web đơn giản, bắt buộc sử dụng .NET Framework 2.0, sử dụng web s
 # Bài làm :  
 # 1.Solution và Project DLL (Class Library .NET Framework 2.0)
 
-# 2.Project Console App (.NET Framework 2.0)
+# 2.Project Console App (.NET Framework 2.0)  
+Tạo project console app ( .NET Framework 2.0) sửa lại code trong Program.cs  
+<img width="1920" height="1024" alt="image" src="https://github.com/user-attachments/assets/5962a6ac-193d-4f7d-9ef0-c189d14a8ed9" />
+* Chuột phải và set up as startup project và test F5    
+<img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/24fdfb51-b874-4dfe-896e-438333362c4e" />
 
 # 3.Project Windows Forms App (.NET Framework 2.0)
 
