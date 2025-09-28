@@ -11,23 +11,35 @@
 - Web đơn giản, bắt buộc sử dụng .NET Framework 2.0, sử dụng web server là IIS, dùng file hosts để tự tạo domain, gắn domain này vào iis, file index.html có sử dụng html css js để xây dựng giao diện nhập được các input cho bài toán, dùng mã js để tiền xử lý dữ liệu, js để gửi lên backend. backend là api.aspx, trong code của api.aspx.cs thì lấy được các input mà js gửi lên, rồi sử dụng được DLL đa năng trên. kết quả gửi lại json cho client, js phía client sẽ nhận được json này hậu xử lý để thay đổi giao diện theo dữ liệu nhận dược, phải có dấu án cá nhân. keyword: c# window web => ASP.NET Web Application (.NET Framework) + tham khảo link chatgpt thầy gửi. project web này biên dịch ra DLL, phải kết hợp với IIS mới chạy được.  
 
 # Bài làm :  
-# 1.Solution và Project DLL (Class Library .NET Framework 2.0)
-Creat a new project > chọn class library (.NET Framework 2.0) và đặt tên, sau đó sửa lại tên file class1 thành trungbinh và thay code trong đó  
+# 1.Solution và Project DLL (Class Library .NET Framework 2.0)  
+Creat a new project > chọn class library (.NET Framework 2.0) và đặt tên, sau đó sửa lại tên file class1 thành trungbinh và thay code trong đó   
+
 <img width="1919" height="1008" alt="image" src="https://github.com/user-attachments/assets/1b6b9058-f6de-4789-a39e-cb554c061514" />
 
 # 2.Project Console App (.NET Framework 2.0)  
-Tạo project console app ( .NET Framework 2.0) sửa lại code trong Program.cs  
+Tạo project console app ( .NET Framework 2.0) sửa lại code trong Program.cs   
+
 <img width="1920" height="1024" alt="image" src="https://github.com/user-attachments/assets/5962a6ac-193d-4f7d-9ef0-c189d14a8ed9" />
-* Chuột phải lên project và set up as startup project và test F5    
+* Chuột phải lên project và set up as startup project và test F5
+  
 <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/24fdfb51-b874-4dfe-896e-438333362c4e" />
 
 # 3.Project Windows Forms App (.NET Framework 2.0)  
-Dùng code để xây dựng giao diện ở file Program.cs :
+Dùng code để xây dựng giao diện ở file Program.cs :  
+
 <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/cf1021c5-970c-4218-bd4f-d7bf9f34b393" />
 
 * Save và chuột phải project và set up as startup project và test F5
+
 <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/5780e927-727c-45cf-9086-44996d26b9eb" />
 
 # 4.Project Web App (ASP.NET Web Application .NET Framework 2.0)
+Tạo project ASP.NET Web Application (.NET Framework 2.0) thêm Reference tới trungbinh  
+Từ project này add thêm 1 HTML page đặt tên index.html và 1 item tên api.aspx và viết code html, css, js cho file index.html và api.aspx.cs  
+<img width="1905" height="1020" alt="image" src="https://github.com/user-attachments/assets/b8ff8a21-6bb8-4786-ba76-31579ae1729e" />
 
-Test :
+  <img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/86670c4d-2b44-4891-bee5-9289978fec7a" />
+
+Deploy IIS + Host:  
+Mở IIS > Add Website > Trỏ đến folder vừa Publish vào
+<img width="1429" height="829" alt="image" src="https://github.com/user-attachments/assets/88ef8ccc-df8a-4ae6-8e8c-2bec980e4ae9" />
